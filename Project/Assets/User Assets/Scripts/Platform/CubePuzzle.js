@@ -21,7 +21,7 @@ function OnTriggerStay(other: Collider){
 
 function OnTriggerEnter(other: Collider){
 	if(other.gameObject.tag == "PushCollider"){
-		audio.PlayOneShot(dooropensound);
+		GetComponent.<AudioSource>().PlayOneShot(dooropensound);
 	}
 }
 
@@ -30,7 +30,7 @@ function OnTriggerExit(other: Collider){
 		puzzle.playerExit = true;
 		yield WaitForSeconds(1);
 		puzzledoor.active = true;
-		audio.PlayOneShot(doorclosedsound);
+		GetComponent.<AudioSource>().PlayOneShot(doorclosedsound);
 		puzzle.timer = 0;
 		puzzle.Update();
 	}

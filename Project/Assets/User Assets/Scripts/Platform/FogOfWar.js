@@ -23,8 +23,8 @@ function AddVert(pos : Vector3, x : float, z : float) : Vector3
 
 function Start()
 {
-	gameObject.AddComponent("MeshFilter");
-	gameObject.AddComponent("MeshRenderer");
+	gameObject.AddComponent.<MeshFilter>();
+	gameObject.AddComponent.<MeshRenderer>();
 	mesh = GetComponent(MeshFilter).mesh;
 	mesh.Clear();
 	// vertices ---------------------------------------------------------------------------------
@@ -76,11 +76,11 @@ function Start()
 	mesh.colors = colors;
 
 
-	renderer.castShadows = false;
-	renderer.receiveShadows = false;
-	renderer.material = newMaterial;
+	GetComponent.<Renderer>().castShadows = false;
+	GetComponent.<Renderer>().receiveShadows = false;
+	GetComponent.<Renderer>().material = newMaterial;
 	
-	gameObject.AddComponent("MeshCollider");
+	gameObject.AddComponent.<MeshCollider>();
 	var meshCollider : MeshCollider = GetComponent(MeshCollider);
 	meshCollider.sharedMesh = mesh;
 }

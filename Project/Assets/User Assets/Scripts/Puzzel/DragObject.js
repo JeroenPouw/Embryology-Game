@@ -39,7 +39,7 @@ function OnMouseDown () {
 	if(Time.timeScale != 0){
 	    screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 	    offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-	    Screen.showCursor = false;
+	    Cursor.visible = false;
 	    rotatePuzzel.enabled = false;
 	}
 }
@@ -55,7 +55,7 @@ function OnMouseDrag() {
      
 function OnMouseUp(){
 	if(Time.timeScale != 0){
-	    Screen.showCursor = true;
+	    Cursor.visible = true;
 	    rotatePuzzel.enabled = true;
 		dragging = false;
 	    if (Input.GetMouseButtonUp(0)){
@@ -73,7 +73,7 @@ function OnMouseUp(){
 				rotatePuzzel.textFeedbackPlus();
 				selectScript.playCorrectSound = true;
 				var currentObject : GameObject = GameObject.Find(spawnerScript.sizeObjects[spawnerScript.count]);
-				currentObject.renderer.enabled = true;
+				currentObject.GetComponent.<Renderer>().enabled = true;
 				currentObject.layer = 18;
 				Destroy(GameObject.FindGameObjectWithTag("PuzzleObjectCorrect"));
 				var gos: GameObject[];
@@ -93,12 +93,12 @@ function OnMouseUp(){
 		 		if(scoreScript.Score >= 1){
 		 			scoreScript.Score -= 1;
 		 			rotatePuzzel.textFeedbackMin();
-		 			audio.PlayOneShot(falseAnswerSound);
+		 			GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		 		}
 		 		else{
 		 			scoreScript.Score = 0;
 		 			rotatePuzzel.textFeedbackZero();
-		 			audio.PlayOneShot(falseAnswerSound);
+		 			GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		 		}
 		 	}
 	 	 	 else if(Physics.Raycast(ray, hit, 100, layerMask) && this.transform.tag == "PuzzleObjectFalse"){
@@ -109,12 +109,12 @@ function OnMouseUp(){
 		 		if(scoreScript.Score >= 1){
 		 			scoreScript.Score -= 1;
 		 			rotatePuzzel.textFeedbackMin();
-		 			audio.PlayOneShot(falseAnswerSound);
+		 			GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		 		}
 		 		else{
 		 			scoreScript.Score = 0;
 		 			rotatePuzzel.textFeedbackZero();
-		 			audio.PlayOneShot(falseAnswerSound);
+		 			GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		 		}
 		 	}
 		 	else if(Physics.Raycast(ray, hit, 100, layerMaskWrong) && this.transform.tag == "PuzzleObjectFalse"){
@@ -125,12 +125,12 @@ function OnMouseUp(){
 		 		if(scoreScript.Score >= 1){
 		 			scoreScript.Score -= 1;
 		 			rotatePuzzel.textFeedbackMin();
-		 			audio.PlayOneShot(falseAnswerSound);
+		 			GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		 		}
 		 		else{
 		 			scoreScript.Score = 0;
 		 			rotatePuzzel.textFeedbackZero();
-		 			audio.PlayOneShot(falseAnswerSound);
+		 			GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		 		}
 		 	}
 		 	else{
@@ -140,7 +140,7 @@ function OnMouseUp(){
 		if(count <= 0){
 			showInfoFind = true;
 			var cObject : GameObject = GameObject.Find(spawnerScript.sizeObjects[spawnerScript.count]);
-			cObject.renderer.enabled = true;
+			cObject.GetComponent.<Renderer>().enabled = true;
 			cObject.layer = 18;
 			Destroy(GameObject.FindGameObjectWithTag("PuzzleObjectCorrect"));
 			var falseObjects: GameObject[];

@@ -6,13 +6,13 @@ wind = FindObjectOfType(Wind);
 function OnTriggerEnter(hit: Collider){
 	if(hit.gameObject.tag == "Player"){
 		wind.playerSafe = true;
-		wind.player.rigidbody.drag = 100;
+		wind.player.GetComponent.<Rigidbody>().drag = 100;
 	}
 }
 
 function OnTriggerExit(hit: Collider){
 	if(hit.gameObject.tag == "Player"){
 		wind.playerSafe = false;
-		wind.player.rigidbody.drag = 0.1;
+		wind.player.GetComponent.<Rigidbody>().drag = 0.1;
 	}
 }

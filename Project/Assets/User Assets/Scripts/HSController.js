@@ -56,7 +56,7 @@ function postScore(name, score) {
  
 // Get the scores from the MySQL DB to display in a GUIText.
 function getScores() {
-    gameObject.guiText.text = "Loading Scores";
+    gameObject.GetComponent.<GUIText>().text = "Loading Scores";
     hs_get = WWW(highscoreUrl);
     yield hs_get;
     if(hs_get.error) {

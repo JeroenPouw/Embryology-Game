@@ -16,7 +16,7 @@ var playCorrectSound : boolean = false;
 function Update () {
 	MouseInput();
 	if(playCorrectSound == true){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		playCorrectSound = false;
 	}
 }
@@ -28,12 +28,12 @@ function MouseInput(){
 		var hit : RaycastHit;
 		var layerMask = 1 << 18;
 		if(Physics.Raycast(ray, hit, 100, layerMask)){
-			var rangeOfRenders = hit.transform.renderer.materials.Length;
+			var rangeOfRenders = hit.transform.GetComponent.<Renderer>().materials.Length;
 			hit.transform.gameObject.layer = 19;
 			for(var i = 0; i < rangeOfRenders; i++){
 				shaderCount++;
 				currentObject = hit.transform.gameObject;
-				hit.transform.renderer.materials[i].shader = Shader.Find("Self-Illumin/Outlined Diffuse");
+				hit.transform.GetComponent.<Renderer>().materials[i].shader = Shader.Find("Self-Illumin/Outlined Diffuse");
 			}
 			objectSelected = true;
 			return hit;
@@ -42,7 +42,7 @@ function MouseInput(){
 	}
 	if(Input.GetButtonDown("Fire1") && !mouseDownL && currentObject != null && Time.timeScale != 0){
 		for(var d = shaderCount; d > 0; d--){
-				currentObject.transform.renderer.materials[d-1].shader = Shader.Find("Diffuse");
+				currentObject.transform.GetComponent.<Renderer>().materials[d-1].shader = Shader.Find("Diffuse");
 			}
 		if(currentObject.layer == 19){
 			currentObject.layer = 18;
@@ -53,13 +53,13 @@ function MouseInput(){
 		var hitAgain : RaycastHit;
 		var layerMaskAgain = 1 << 18;
 		if(Physics.Raycast(rayAgain, hitAgain, 100, layerMaskAgain)){
-			var rangeOfRendersAgain = hitAgain.transform.renderer.materials.Length;
+			var rangeOfRendersAgain = hitAgain.transform.GetComponent.<Renderer>().materials.Length;
 			hitAgain.transform.gameObject.layer = 19;
 			shaderCount = 0;
 			for(var r = 0; r < rangeOfRendersAgain; r++){ 
 				shaderCount++;
 				currentObject = hitAgain.transform.gameObject;
-				hitAgain.transform.renderer.materials[r].shader = Shader.Find("Self-Illumin/Outlined Diffuse");
+				hitAgain.transform.GetComponent.<Renderer>().materials[r].shader = Shader.Find("Self-Illumin/Outlined Diffuse");
 			}
 			objectSelected = true;
 			return hitAgain;
@@ -129,8 +129,8 @@ function OnGUI(){
 	}
 	if(GUI.Button (new Rect(Screen.width - 400, 20, 180, 50), "Transparent") && currentObject != null){
 		for(var e = shaderCount; e > 0; e--){
-				currentObject.transform.renderer.materials[e-1].shader = Shader.Find("Transparent/Diffuse");
-				currentObject.transform.renderer.materials[e-1].color.a = 0.5;
+				currentObject.transform.GetComponent.<Renderer>().materials[e-1].shader = Shader.Find("Transparent/Diffuse");
+				currentObject.transform.GetComponent.<Renderer>().materials[e-1].color.a = 0.5;
 			}
 		currentObject.layer = 20;
 		shaderCount = 0;
@@ -139,11 +139,11 @@ function OnGUI(){
 		layerObjects = FindGameObjectsWithLayer(20);
 		if(layerObjects != null){
 			for(var l = 0; l < layerObjects.length; l++){
-				var mats = layerObjects[l].transform.renderer.materials.Length;
+				var mats = layerObjects[l].transform.GetComponent.<Renderer>().materials.Length;
 				var arrayObjects = layerObjects[l];
 				arrayObjects.layer = 18;
 					while(layerRenderCount < mats){
-					 	arrayObjects.transform.renderer.materials[layerRenderCount].shader = Shader.Find("Diffuse");
+					 	arrayObjects.transform.GetComponent.<Renderer>().materials[layerRenderCount].shader = Shader.Find("Diffuse");
 					 	layerRenderCount++;
 					}
 					if(layerRenderCount == mats){

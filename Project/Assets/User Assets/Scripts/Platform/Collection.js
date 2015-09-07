@@ -27,7 +27,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "Ventral&DorsalPancreas")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[0] += 1; 
         Inventory_Add_Item.InventoryNewItemAdded = 0;
         Destroy(col.gameObject);
@@ -36,7 +36,7 @@ function OnTriggerEnter (col : Collider)
 	if (col.gameObject.name == "VitellineDuct")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[1] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 1;
         pickUpVitellineDuct = true;
@@ -45,7 +45,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "RespiratoyBud")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[2] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 2;
         pickUpRespiratoyBud = true;
@@ -54,7 +54,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "ThyroidGland")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[3] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 3;
         pickUpThyroid = true;
@@ -63,7 +63,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "Lever")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[4] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 4;
         pickUpLever = true;
@@ -80,7 +80,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "Heart")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[6] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 6;
         pickUpHeart = true;
@@ -89,7 +89,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "Veins")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[7] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 7;
         pickUpVeins = true;
@@ -98,7 +98,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "Somites")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[8] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 8;
         pickUpSomites = true;
@@ -107,7 +107,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "MesonephrosMesonphericDuctGonodalRidge")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[9] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 9;
         pickUpMesonephros = true;
@@ -116,7 +116,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "LensPlacodeOpticVesticle")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[10] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 10;
         pickUpLens = true;
@@ -125,7 +125,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "OticVesicle")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[11] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 11;
         pickUpOtic = true;
@@ -134,7 +134,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "RathesPouch")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[12] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 12;
         pickUpRathesPouch = true;
@@ -143,7 +143,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "Skin")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[13] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 13;
         pickUpSkin = true;
@@ -152,7 +152,7 @@ function OnTriggerEnter (col : Collider)
     if (col.gameObject.name == "NeuralTubeNerves")
     {
     	Instantiate(foundObjectParticle, this.gameObject.transform.position, Quaternion.Euler(270, 0, 0));
-    	audio.PlayOneShot(pickupObject);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupObject);
         Player_Inventory.itemPlayersAmount[14] += 1;
         Inventory_Add_Item.InventoryNewItemAdded = 14;
         pickUpNeural = true;
