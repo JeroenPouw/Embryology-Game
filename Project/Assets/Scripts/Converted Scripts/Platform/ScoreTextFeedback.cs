@@ -11,18 +11,16 @@ public class ScoreTextFeedback : MonoBehaviour {
 	
 	private Vector3 originalScale;
 	
-	void  OnEnable (){
-		Start();
-	} 
-	
-	void  Start (){
+
+	void  Awake (){
 		
 		GetComponent<Renderer>().material.color = textColor;
-		GetComponent<Renderer>().material.color.a = 1.0f;
+		textColor.a = 1.0f;
+
 	}
 	
 	void  Update (){
-		GetComponent<Renderer>().material.color.a -= 0.1f * Time.deltaTime * 5; // Fade away text, last number dictates how fast to fade, higher = faster
+		textColor.a -= 0.1f * Time.deltaTime * 5; // Fade away text, last number dictates how fast to fade, higher = faster
 		StartCoroutine(LerpScale(2.0f)); // Time to take to Lerp to new size in seconds
 	}
 	

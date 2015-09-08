@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FT_FreeSample\Script\Button.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Platform\SafeZones.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\Platform\ScoreTextContainer.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\Platform\ScoreTextFeedback.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\Platform\Scores.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Platform\TutorialHighlightScript.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Platform\TutorialScript.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\CameraShaking.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\DragObjects.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\Information.cs" />
