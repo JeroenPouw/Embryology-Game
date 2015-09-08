@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\User Assets\Scripts\HSController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\User Assets\Scripts\Puzzel\SelectObjects.js">
     <Files>
-      <File FileName="Assets\User Assets\Scripts\HSController.js" Line="8" Column="47" />
-      <File FileName="Assets\User Assets\Scripts\md5functions.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Converted Scripts\SelectObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Converted Scripts\SelectObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\User Assets\Scripts\Puzzel\SelectObjects.js" Line="150" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
