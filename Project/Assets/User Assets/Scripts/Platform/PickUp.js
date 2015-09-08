@@ -20,7 +20,7 @@ function Update () {
 function OnCollisionEnter(hit: Collision){
     if(hit.gameObject.tag == "DNArepair" && Ammo <= 5){  
     	Instantiate(pickupParticle, hit.gameObject.transform.position, Quaternion.Euler(0, 0, 0)); 
-    	audio.PlayOneShot(pickupDNARepairSound);
+    	GetComponent.<AudioSource>().PlayOneShot(pickupDNARepairSound);
  		healthscript.shieldWidth = healthscript.shieldWidth + 43;
         hit.gameObject.active = false;
         Ammo += 1; 
@@ -36,7 +36,7 @@ function OnCollisionEnter(hit: Collision){
      else if(hit.gameObject.tag == "DNArepair" && Ammo >= 6){ 
      	Instantiate(pickupParticle, hit.gameObject.transform.position, Quaternion.Euler(0, 0, 0)); 
       	Destroy(hit.gameObject);
-      	audio.PlayOneShot(pickupDNARepairSound);
+      	GetComponent.<AudioSource>().PlayOneShot(pickupDNARepairSound);
     }         
 }
 
@@ -47,7 +47,7 @@ function Shoot(){
     	var waterSplash:GameObject = Instantiate(waterParticle, shot.transform.position, Quaternion.Euler(0, 0, 0)); 
     	waterSplash.gameObject.transform.parent = shot.gameObject.transform;
     	shot.GetComponent(Missle).enabled = true;
-    	audio.PlayOneShot(shootDNARepairSound);
+    	GetComponent.<AudioSource>().PlayOneShot(shootDNARepairSound);
     	Ammo -= 1; 
 		healthscript.shieldWidth = healthscript.shieldWidth - 43;
  	}         

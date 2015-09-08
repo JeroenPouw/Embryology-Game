@@ -509,7 +509,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level1_room1"){
-	audio.PlayOneShot(correctAnswerSound);
+	GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			VentralDorsalPancreas.gameObject.SetActive(true);
 			score.Score += 10;
@@ -547,7 +547,7 @@ function OnTriggerEnter(other: Collider){
 		}
 	}
 	if(other.gameObject.tag == "false_level1_room1"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -566,7 +566,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level1_room2"){
-	audio.PlayOneShot(correctAnswerSound);
+	GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			VitellineDuct.gameObject.SetActive(true);
 			score.Score += 10;
@@ -602,7 +602,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level1_room2"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -621,7 +621,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level1_room3"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			RespiratoryBud.gameObject.SetActive(true);
 			score.Score += 10;
@@ -656,7 +656,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level1_room3"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -675,7 +675,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level1_room4"){
-	audio.PlayOneShot(correctAnswerSound);
+	GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			ThyroidGland.gameObject.SetActive(true);
 			score.Score += 10;
@@ -710,7 +710,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level1_room4"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -729,7 +729,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level1_room5"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Liver.gameObject.SetActive(true);
 			score.Score += 10;
@@ -764,7 +764,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level1_room5"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -784,7 +784,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level2_room1"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Coelom.gameObject.SetActive(true);
 			score.Score += 10;
@@ -819,7 +819,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level2_room1"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -838,7 +838,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level2_room2"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Heart.gameObject.SetActive(true);
 			score.Score += 10;
@@ -873,7 +873,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 		if(other.gameObject.tag == "false_level2_room2"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -892,7 +892,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level2_room3"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Veins.gameObject.SetActive(true);
 			score.Score += 10;
@@ -927,7 +927,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level2_room3"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -946,7 +946,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level2_room4"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Somites.gameObject.SetActive(true);
 			score.Score += 10;
@@ -981,7 +981,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level2_room4"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -1000,7 +1000,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level2_room5"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			UrogenitalRidge.gameObject.SetActive(true);
 			score.Score += 10;
@@ -1035,7 +1035,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level2_room5"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -1055,7 +1055,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level3_room1"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			LensPlacodeOpticVesticle.gameObject.SetActive(true);
 			score.Score += 10;
@@ -1090,7 +1090,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level3_room1"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -1109,7 +1109,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level3_room2"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			OticVesicle.gameObject.SetActive(true);
 			score.Score += 10;
@@ -1144,7 +1144,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level3_room2"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -1163,7 +1163,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 		if(other.gameObject.tag == "correct_level3_room3"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Neuraltube.gameObject.SetActive(true);
 			score.Score += 10;
@@ -1198,7 +1198,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level3_room3"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -1217,7 +1217,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 		if(other.gameObject.tag == "correct_level3_room4"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			Skin.gameObject.SetActive(true);
 			score.Score += 10;
@@ -1252,7 +1252,7 @@ function OnTriggerEnter(other: Collider){
 	}
 }
 	if(other.gameObject.tag == "false_level3_room4"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;
@@ -1271,7 +1271,7 @@ function OnTriggerEnter(other: Collider){
 		InfoClicked = false;
 	}
 	if(other.gameObject.tag == "correct_level3_room5"){
-		audio.PlayOneShot(correctAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(correctAnswerSound);
 		if(answerCount == 0){
 			RathkesPouch.gameObject.SetActive(true);
 			score.Score += 10;
@@ -1306,7 +1306,7 @@ function OnTriggerEnter(other: Collider){
 	}
 	}
 	if(other.gameObject.tag == "false_level3_room5"){
-		audio.PlayOneShot(falseAnswerSound);
+		GetComponent.<AudioSource>().PlayOneShot(falseAnswerSound);
 		answerCount ++;
 		fade.fadeIn();
 		fade.boolfadeIn = true;

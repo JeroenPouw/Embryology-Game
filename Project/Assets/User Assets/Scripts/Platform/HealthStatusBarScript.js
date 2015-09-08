@@ -80,7 +80,7 @@ function OnCollisionEnter(hit: Collision){
 	}
 	else if(hit.gameObject.tag == "Enemy" && shieldWidth >= -15){
 		var enemyHit2:GameObject = Instantiate(enemyhitParticle, hit.gameObject.transform.position, Quaternion.Euler(0, 0, 0));
-		audio.PlayOneShot(lostLifeSound);
+		GetComponent.<AudioSource>().PlayOneShot(lostLifeSound);
 		script.Ammo -= 1;
 		shieldWidth -= 43;
 		Destroy(hit.gameObject);
@@ -89,11 +89,11 @@ function OnCollisionEnter(hit: Collision){
 }
 function reduceHealth() {
    if(healthWidth >= -8) {
-   		audio.PlayOneShot(lostLifeSound);
+   		GetComponent.<AudioSource>().PlayOneShot(lostLifeSound);
        healthWidth = healthWidth - 25;
    }  
    if(healthWidth <= -17){
-   		audio.PlayOneShot(gameOverSound);
+   		GetComponent.<AudioSource>().PlayOneShot(gameOverSound);
    		playerDead = true;
    		scriptScore.Score = 0;
    		Time.timeScale = 0;
@@ -101,11 +101,11 @@ function reduceHealth() {
 }
 function reduceHealthElectro() {
    if(healthWidth >= -8) {
-   		audio.PlayOneShot(nerveHitSound);
+   		GetComponent.<AudioSource>().PlayOneShot(nerveHitSound);
        healthWidth = healthWidth - 25;
    }  
    if(healthWidth <= -17){
-   		audio.PlayOneShot(gameOverSound);
+   		GetComponent.<AudioSource>().PlayOneShot(gameOverSound);
    		playerDead = true;
    		scriptScore.Score = 0;
    		Time.timeScale = 0;

@@ -68,10 +68,10 @@ function OnCollisionEnter(hit: Collision){
 		Instantiate(hitParticle, hit.gameObject.transform.position, Quaternion.Euler(0, 0, 0));
 		score.Score += 1;
 		scorePlus.eenScore = true;
-		this.gameObject.collider.enabled = false;
-		gameObject.collider.enabled = false;
-		this.gameObject.renderer.enabled = false;
-		audio.PlayOneShot(enemyHurt);
+		this.gameObject.GetComponent.<Collider>().enabled = false;
+		gameObject.GetComponent.<Collider>().enabled = false;
+		this.gameObject.GetComponent.<Renderer>().enabled = false;
+		GetComponent.<AudioSource>().PlayOneShot(enemyHurt);
 		Destroy(hit.gameObject, enemyHurt.length);
 		Destroy(this.gameObject, enemyHurt.length);
 		spawn.enemySpawned -= 1;

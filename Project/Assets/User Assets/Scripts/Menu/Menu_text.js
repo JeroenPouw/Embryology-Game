@@ -18,10 +18,10 @@ function Start(){
 function OnMouseEnter()
 {
 	// change the color of the text
-	renderer.material.color = Color.black;
+	GetComponent.<Renderer>().material.color = Color.black;
 }
 function OnMouseExit(){
-	renderer.material.color = Color.white;
+	GetComponent.<Renderer>().material.color = Color.white;
 }
 
 function OnMouseUp(){

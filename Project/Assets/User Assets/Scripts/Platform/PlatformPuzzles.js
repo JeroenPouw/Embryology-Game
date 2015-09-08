@@ -47,7 +47,7 @@ function OnTriggerEnter(other: Collider){
 	if(other.gameObject.tag == "PushCollider"){
 		buttonAnimation = true;
 		puzzledoor.active = false;
-		audio.PlayOneShot(dooropensound);
+		GetComponent.<AudioSource>().PlayOneShot(dooropensound);
 		playerExit = false;
 	}
 	if(other.gameObject.name == "PuzzleBlockInfo"){
@@ -63,7 +63,7 @@ function OnTriggerExit(other: Collider){
 		playerExit = true;
 		yield WaitForSeconds(1);
 		puzzledoor.active = true;
-		audio.PlayOneShot(doorclosedsound);
+		GetComponent.<AudioSource>().PlayOneShot(doorclosedsound);
 		timer = 0;
 	}
 	if(other.gameObject.name == "PuzzleBlockInfo"){

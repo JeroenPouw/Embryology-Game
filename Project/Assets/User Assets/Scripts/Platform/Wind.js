@@ -39,7 +39,7 @@ function Wind() {
 
 function OnTriggerEnter(hit: Collider){
 	if(hit.gameObject.tag == "Player"){
-		player.rigidbody.drag = 0.1;
+		player.GetComponent.<Rigidbody>().drag = 0.1;
 		WindOn = true;
 		timer = 0;	
 	}
@@ -47,11 +47,11 @@ function OnTriggerEnter(hit: Collider){
 
 function OnTriggerExit(hit: Collider){
 	if(hit.gameObject.tag == "Player"){
-		player.rigidbody.drag = 100;
+		player.GetComponent.<Rigidbody>().drag = 100;
 		WindOn = false;	
 	}
 }
 
 function WindOnPlayer(){
-	player.rigidbody.AddForce(transform.forward * forcePower);
+	player.GetComponent.<Rigidbody>().AddForce(transform.forward * forcePower);
 }

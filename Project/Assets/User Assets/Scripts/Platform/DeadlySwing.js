@@ -15,7 +15,7 @@ function Update() {
 	zAs = maxRotation * Mathf.Sin(Time.time * speed);
 	transform.rotation = Quaternion.Euler(xAs, yAs , zAs);
 	if(zAs >= -10 && zAs <= 10){
-		audio.PlayOneShot(deadlySwingSound);
+		GetComponent.<AudioSource>().PlayOneShot(deadlySwingSound);
 	}
 	if(zAs <= -59 && zAs >= -60 && yAs == 90){
 		var waterSplashPar : GameObject = Instantiate(waterSplashParticle, this.gameObject.transform.position, Quaternion.Euler(0, 0, 0)); 

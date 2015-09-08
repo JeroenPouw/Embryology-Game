@@ -10,12 +10,12 @@ function OnEnable(){
 
 function Start(){
 
-	renderer.material.color = textColor;
-	renderer.material.color.a = 1.0;
+	GetComponent.<Renderer>().material.color = textColor;
+	GetComponent.<Renderer>().material.color.a = 1.0;
 }
 
 function Update(){
-	renderer.material.color.a -= 0.1 * Time.deltaTime * 5; // Fade away text, last number dictates how fast to fade, higher = faster
+	GetComponent.<Renderer>().material.color.a -= 0.1 * Time.deltaTime * 5; // Fade away text, last number dictates how fast to fade, higher = faster
 	StartCoroutine(LerpScale(2.0f)); // Time to take to Lerp to new size in seconds
 }
 
