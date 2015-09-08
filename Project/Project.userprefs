@@ -1,9 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\User Assets\Scripts\Puzzel\SelectObjects.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\User Assets\Scripts\Platform\DeadlySwing.js">
     <Files>
-      <File FileName="Assets\Scripts\Converted Scripts\SelectObject.cs" Line="23" Column="27" />
-      <File FileName="Assets\User Assets\Scripts\Puzzel\SelectObjects.js" Line="142" Column="68" />
+      <File FileName="Assets\Scripts\Converted Scripts\CubePuzzles.cs" Line="19" Column="2" />
+      <File FileName="Assets\User Assets\Scripts\Platform\DeadlySwing.js" Line="4" Column="1" />
+      <File FileName="Assets\Scripts\Converted Scripts\Winds.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Converted Scripts\Blokkade.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Converted Scripts\Checkpoints.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Converted Scripts\Collections.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
