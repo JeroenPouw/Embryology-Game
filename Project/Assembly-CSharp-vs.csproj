@@ -47,7 +47,15 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FT_FreeSample\Script\Button.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\SelectObject.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Platform\ScoreTextContainer.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Platform\ScoreTextFeedback.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Platform\Scores.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\CameraShaking.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\DragObjects.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\Information.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\PuzzelItem.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\RotateObjects.cs" />
+     <Compile Include="Assets\Scripts\Converted Scripts\Puzzel\SelectObject.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

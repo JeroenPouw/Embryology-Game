@@ -238,7 +238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &346801687 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100016, guid: c7685c9d47af2ac4f8f0bb7ed42f6805, type: 2}
@@ -477,7 +477,7 @@ Transform:
   m_Children:
   - {fileID: 1799223890}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &402354209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,60 +520,28 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Active:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Focused:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnActive:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnFocused:
       m_Background: {fileID: 0}
-      m_TextColor:
-        r: 0
-        g: 0
-        b: 0
-        a: 1
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Border:
       m_Left: 0
       m_Right: 0
@@ -594,7 +562,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_Alignment: 0
@@ -1978,7 +1946,7 @@ Transform:
   m_Children:
   - {fileID: 2122255854}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &1110771878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,11 +2117,7 @@ MonoBehaviour:
   skin: {fileID: 0}
   TheTextures: {fileID: 0}
   start: {fileID: 0}
-  statColor:
-    r: .897058845
-    g: .468317479
-    b: .468317479
-    a: 1
+  statColor: {r: .897058845, g: .468317479, b: .468317479, a: 1}
 --- !u!114 &1110771886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2404,7 +2368,7 @@ Transform:
   m_Children:
   - {fileID: 1748002967}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &1310576632 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100006, guid: c7685c9d47af2ac4f8f0bb7ed42f6805, type: 2}
@@ -2538,11 +2502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3d1e3c1f16bb144b968c166caff0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  textColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!102 &1365014048
 TextMesh:
   serializedVersion: 3
@@ -2731,7 +2691,7 @@ Transform:
   m_Children:
   - {fileID: 1365014050}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1001 &1681941996
 Prefab:
   m_ObjectHideFlags: 0
@@ -2882,60 +2842,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!1001 &1747201522
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -31.2668686
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9.11725044
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -15.6070118
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 44d455117d0e24fcb8b495dafd66818d, type: 2}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 420.642639
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 26.2901649
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 420.642639
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1748002963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,11 +2871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3d1e3c1f16bb144b968c166caff0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  textColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!102 &1748002965
 TextMesh:
   serializedVersion: 3
@@ -3409,11 +3311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3d1e3c1f16bb144b968c166caff0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
+  textColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!102 &2122255852
 TextMesh:
   serializedVersion: 3

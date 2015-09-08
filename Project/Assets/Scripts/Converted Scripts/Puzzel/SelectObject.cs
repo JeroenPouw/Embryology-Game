@@ -3,10 +3,11 @@
 
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SelectObject : MonoBehaviour {
 	
-	//DragObject dragObjectScript;
+	DragObjects dragObjectScript;
 	static bool  mouseDownL = false;
 	static bool  mouseDownR = false;
 	public int layerMask;
@@ -22,9 +23,10 @@ public class SelectObject : MonoBehaviour {
 
 	AudioSource AudioCorrect;
 	//AudioClip correctAnswerSound;
-	bool  playCorrectSound = false;
+	public bool  playCorrectSound = false;
 
 	void Awake(){
+		dragObjectScript.gameObject.GetComponent<DragObjects> ();
 		rend = GetComponent<Renderer> ();
 	}
 	
@@ -43,7 +45,6 @@ public class SelectObject : MonoBehaviour {
 			RaycastHit hit;
 			layerMask = 1 << 18;
 			if(Physics.Raycast(ray, out hit, 100, layerMask)){
-				//Renderer render = GetComponent<Renderer>();
 				rangeOfrenders = hit.transform.GetComponent<Renderer>().materials.Length;
 				hit.transform.gameObject.layer = 19;
 				for(int i= 0; i < rangeOfrenders; i++){
@@ -52,7 +53,7 @@ public class SelectObject : MonoBehaviour {
 					hit.transform.GetComponent<Renderer>().materials[i].shader = Shader.Find("Self-Illumin/Outlined Diffuse");
 				}
 				objectSelected = true;
-				return hit;
+
 			}
 			
 		}
@@ -68,7 +69,7 @@ public class SelectObject : MonoBehaviour {
 			Ray rayAgain = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hitAgain;
 			int layerMaskAgain= 1 << 18;
-			if(Physics.Raycast(rayAgain, hitAgain, 100, layerMaskAgain)){
+			if(Physics.Raycast(rayAgain, out hitAgain, 100, layerMaskAgain)){
 				int rangeOfRendersAgain= hitAgain.transform.GetComponent<Renderer>().materials.Length;
 				hitAgain.transform.gameObject.layer = 19;
 				shaderCount = 0;
@@ -78,7 +79,7 @@ public class SelectObject : MonoBehaviour {
 					hitAgain.transform.GetComponent<Renderer>().materials[r].shader = Shader.Find("Self-Illumin/Outlined Diffuse");
 				}
 				objectSelected = true;
-				return hitAgain;
+
 			}
 			
 		}
@@ -146,7 +147,7 @@ public class SelectObject : MonoBehaviour {
 		if(GUI.Button (new Rect(Screen.width - 400, 20, 180, 50), "Transparent") && currentObject != null){
 			for(int e= shaderCount; e > 0; e--){
 				currentObject.transform.GetComponent<Renderer>().materials[e-1].shader = Shader.Find("Transparent/Diffuse");
-				currentObject.transform.GetComponent<Renderer>().materials[e-1].color.a = 0.5f;
+				//currentObject.transform.GetComponent<Renderer>().materials[e-1].color.a = 0.5f;
 			}
 			currentObject.layer = 20;
 			shaderCount = 0;
@@ -170,8 +171,9 @@ public class SelectObject : MonoBehaviour {
 		}
 	}
 	GameObject[] FindGameObjectsWithLayer ( int layer  ){
-		GameObject[] goArray = FindObjectsOfType(typeof(GameObject));
-		ArrayList goList = new System.Collections.Generic.List<GameObject>();
+		GameObject[] goArray = FindObjectsOfType(typeof(GameObject))as GameObject[];
+		List<GameObject> goList = new List<GameObject>();
+
 
 		for (int i= 0; i < goArray.Length; i++) {
 			if (goArray[i].layer == layer) {

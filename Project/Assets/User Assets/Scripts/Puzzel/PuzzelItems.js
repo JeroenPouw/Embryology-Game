@@ -14,15 +14,15 @@ function Start(){
 
 function SpawnObjects(){
 		if(count <= 14){
-			var object1 : GameObject = Instantiate(Resources.Load("PuzzelPrefabs/" + sizeObjects[count] + "_size1"));
+			var object1 : GameObject = Instantiate(Resources.Load("PuzzelPrefabs/" + sizeObjects[count] + "_size1")) as GameObject ;
 			object1.transform.parent = this.transform;
 			object1.transform.localPosition = startPosition + Vector3(-40, 0, 0);
 			
-			var object2 : GameObject = Instantiate(Resources.Load("PuzzelPrefabs/" + sizeObjects[count] + "_size2"));
+			var object2 : GameObject = Instantiate(Resources.Load("PuzzelPrefabs/" + sizeObjects[count] + "_size2"))as GameObject;
 			object2.transform.parent = this.transform;
 			object2.transform.localPosition = startPosition;
 			
-			var object3 : GameObject = Instantiate(Resources.Load("PuzzelPrefabs/" + sizeObjects[count] + "_size3"));
+			var object3 : GameObject = Instantiate(Resources.Load("PuzzelPrefabs/" + sizeObjects[count] + "_size3"))as GameObject;
 			object3.transform.parent = this.transform;
 			object3.transform.localPosition = startPosition + Vector3(50, 0, 0);
 			
