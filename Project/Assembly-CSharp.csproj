@@ -39,23 +39,15 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Program Files (x86)/UnityPro/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Program Files (x86)/UnityPro/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FT_FreeSample\Script\Button.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\Blokkade.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\Checkpoints.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\Collections.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\CubePuzzles.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\DangerousSwing.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\Menu\CreditScript.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\Menu\MenuText.cs" />
      <Compile Include="Assets\Scripts\Converted Scripts\SelectObject.cs" />
-     <Compile Include="Assets\Scripts\Converted Scripts\Winds.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
@@ -88,10 +80,10 @@
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\User Assets\Resources\self_illuminated_outlined_diffuse_113.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Program Files (x86)/UnityPro/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>D:/Program Files (x86)/UnityPro/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
